@@ -2,3 +2,5 @@ venv/*
 dist/*
 build/*
 aws_mfa_tool.egg-info/*
+
+*pyc
