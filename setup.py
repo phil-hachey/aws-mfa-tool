@@ -1,20 +1,14 @@
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
-
-install_reqs = parse_requirements('requirements.txt', session='hack')
-requirements = [str(ir.req) for ir in install_reqs]
 
 setup(
     name="aws-mfa-tool",
     description="",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
-    install_requires=requirements,
-    tests_require=[
-        'coverage',
-        'mockito'
+    install_requires=[
+        'boto3>=1.5, <1.6',
+        'click>=6.7, < 6.8',
     ],
-    test_suite='test',
     entry_points = {
         'console_scripts': [
             'aws-mfa=aws_mfa_tool.cli:cli'
