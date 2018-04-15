@@ -1,3 +1,7 @@
+# UNMAINTAINED
+
+I've since started using [aws-mfa](https://github.com/broamski/aws-mfa), which essentially accomplishes the same thing but better.
+
 # AWS MFA tool
 
 This is a simple CLI tool to write temporary credentials to `~/.aws.credentials` so they could be used as normal credentials. This need arose as a work around to Terraform's lack of MFA support when assuming roles (https://github.com/terraform-providers/terraform-provider-aws/issues/2420).
